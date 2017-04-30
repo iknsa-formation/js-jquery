@@ -4,24 +4,26 @@
     <meta charset="utf-8">
     <title>JavaScript Course - IKNSA</title>
     <script type="text/javascript">
-    	/* Boucle for */
+    	
+    	/*Manipulation objet*/
+    	var personne = {
+    		nom: 'Moussa',
+    		age: 8
+    	}
 
-    	/*for ( compteur < 5; compteur++) {
-    		console.log("Boucle for");
+    	/*if (personne.age >= 18) {
+    		console.log( personne.nom, 'Tu peux passer ton permis');
+    	}
+    	else if (personne.age >= 15){
+    		console.log('Tu peux passer la conduite accompagnée');
+    	}
+    	else{
+    		console.log('Tu peux pas  conduire encore un peu de patience !');
     	}*/
 
-    	/*Boucle While */
-    	var compteur = 0;
-
-    	/*While(compteur < 3){
-    		console.log("Boucle While");
-    		compteur++;
-    	}*/
-
-    	do{
-    		compteur++;
-    		console.log("do while");
-    	}while(compteur<2);
+    	// Ternaire
+    	console.log(personne.age >= 18 ? 'Tu es majeur!' : 'Tu es mineur!');
+    	// switch case
     </script>
   </head>
   <body>

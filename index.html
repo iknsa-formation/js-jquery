@@ -5,97 +5,36 @@
     <title>JavaScript Course - IKNSA</title>
     <script type="text/javascript">
     	
-    // Les boucles
-    
-    /**
-     * La boucle For (Pour Chaque conditions)
-    */
-    for (var i = 0; i < 5; i++) {
-    	console.log('for ' + i)
-    }
+        function estPremier(nombre){
 
-    /**
-     *  La boucle while (TANT QUE CONDITIONS)
-     */
-    
-    var i =0;
-    while(i < 3){
-    	console.log('while ' +i)
-    	i++;
-    }
+            for (var i = 2; i < nombre; i++) {
+            	if (nombre % i === 0) {
+            		console.log(nombre + ' n\'est pas premeier car  il est divisible par ' + i)
+                    return false
+            	}
+            }
+            console.log(nombre + ' est un nombre premier ')
+            return true
+        }
 
-    /**
-     * La boucle do while (FAIT UNE FOIS ET APRES VERIFIE LA CONDITION)
-     */
-    var j = 0;
-    do{
-    	console.log('do while '+j)
-    	j++
-    }while(j < 3)
+        function addition(a,b){
+            return a + b
+        }
 
+        function soustraction(a,b){
+            return a - b
+        }
 
-    // Exemple avec les objets
-    var admis =  true;
-    var etudiants = [
-	    {
-	    	nom : 'Pierre',
-	    	moyenne: '15',
-	    	admis: true
-	    },{
-	    	nom : 'Paul',
-	    	moyenne: '10',
-	    	admis: true
-	    },
-	    {
-	    	nom : 'Jacques',
-	    	moyenne: '8',
-	    	admis: false
-	    },
-	    {
-	    	nom : 'Manon',
-	    	moyenne: '5',
-	    	admis: false
-	    }
-    ]
+        function multiplication(a, b){
+            return a * b
+        }
 
-    /*console.log(etudiants[0])
-    console.log(etudiants[1])
-    console.log(etudiants[2])
-    console.log(etudiants[3])*/
+        function division(a,b){
+            return a/b
+        }
 
-    /*console.log('Liste des etudiants')
-    for (var i = 0; i < etudiants.length; i++) {
-    	//console.log(etudiants[i])
+        // FAIRE UNE FONCTION CALCULETTE AVEC PROMPT
 
-    	var etudiant = etudiants[i]
-
-    	//console.log(etudiant.nom)
-
-    	//console.log(etudiant.nom +' a une moyenne de '+ etudiant.moyenne)
-
-    	// Faire une liste des admis et non admis
-    	if (etudiant.moyenne >= 10 && admis) {
-    		console.log(etudiant.nom + ' est admis ' + 'avec ' + etudiant.moyenne + ' de moyenne')
-    	}
-    	else{
-    		console.log(etudiant.nom + ' est non admis')
-    	}
-    }*/
-
-    // Nombre Premier
-    /**
-     * Un nombre est premier s'il n'est divible que par 1 ou lui-méme
-     */
-    var nbrePremier = 83
-    for (var i = 2; i < nbrePremier; i++) {
-    	if (nbrePremier % i === 0) {
-    		console.log( nbrePremier + ' n\'est pas premier car il est divible par ' + i)
-    		break
-    	}
-    	else{
-    		console.log(nbrePremier + ' est un nombre premier')
-    	}
-    }
     </script>
   </head>
   <body>
